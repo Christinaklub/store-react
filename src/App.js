@@ -8,10 +8,12 @@ function App() {
   const [clothingItems, setClothingItems] = useState(clothingData);
   const [cartItems, setCartItems] = useState([]);
 
+  // Funktion til at tilføje en vare til indkøbskurven
   const addToCart = (item) => {
-    // Tilføj tingene til kurven
-    setCartItems([...cartItems, item]);
+  // Funktion til at tilføje en vare til indkøbskurven
+  setCartItems([...cartItems, item]);
 
+    // Fjerner den tilføjede vare fra tøjvarer ved at filtrere den ud
     const updatedClothingItems = clothingItems.filter(
       (clothing) => clothing.id !== item.id
     );

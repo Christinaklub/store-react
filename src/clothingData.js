@@ -1,3 +1,5 @@
+// Der er flere tøjvarer i arrayet med forskellige egenskaber.
+// Dette giver en samling af produkter tilgængelige for brugerne af din webshop.
 const clothingData = [
     {
         id: 1,
